@@ -26,7 +26,7 @@ export function getLikes(): Promise<LikeData> {
   return likesCachePromise;
 }
 
-function sleep(duration: number): Promise<void> {
+export function sleep(duration: number): Promise<void> {
   return new Promise((resolve) => {
     setTimeout(resolve, duration);
   });
